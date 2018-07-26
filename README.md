@@ -13,4 +13,4 @@ the presentation in Lab
 * 基于提出的框架，本文制定了双重支付和自私挖掘的最佳应对策略，这个模型扩展了基于马尔可夫的决策过程 (MDP) 来寻找一个最佳策略。
 * Ethereum 相比比特币有更小的块激励和更高的旧块率，Ethereum 需要至少 37 个确认才能达到 bitcoin 6 个区块确认的安全性，这 6 个确认能抵御有 30% 挖矿力的攻击者。而 Litecoin 要求 28 个，Dogecoin 要求 47 个。
 * 不牺牲安全性的话，PoW 区块链最多能达到一分钟 60 个交易 (现在是一分钟 7 个)。
-* 设计了一个比特币区块链模拟器 Bitcoin blockchain simulator[http://arthurgervais.github.io/Bitcoin-Simulator/index.html] 来评估区块链的安全性和性能。
+* 设计了一个比特币区块链模拟器 [Bitcoin blockchain simulator](http://arthurgervais.github.io/Bitcoin-Simulator/index.html) 来评估区块链的安全性和性能。
