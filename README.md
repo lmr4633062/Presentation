@@ -20,3 +20,13 @@ the presentation in Lab
 * 从签名方案和零知识证明提出一个普适的 DAC 结构，并且证明在 [Universally Composable Security: A New Paradigm for Cryptographic Protocols](https://ieeexplore.ieee.org/abstract/document/959888/) 提出的 UC (通用可组合性)框架是安全的。本文的结构可用于安全构造区块，构造一个混合协议的高级系统，使得模块设计和简单的安全分析成为可能。
 * 本文基于最近由 [Efficient Fully Structure-Preserving Signatures for Large Messages](https://link.springer.com/chapter/10.1007/978-3-662-48797-6_11) 提出的结构保护签名机制和 [schnorr 零知识证明](https://link.springer.com/chapter/10.1007/0-387-34805-0_22)，描述了一个 DAC 有效实例。
 * 在满足隐私保护条件的环境下的许可区块链中呈现了本文方案的执行，并给出了执行图，证明了方案的可行性。比如用来自于委托证书 4 个未公开的属性产生了一个属性 token，就花了 50 毫秒，验证就花了 40 毫秒。
+## Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts
+2016 S&P
+本文提出 Hawk，一个建立隐私保护智能合约的框架。非专业开发人员也可以写 Hawk 程序而不用执行加密。这个 Hawk 编译器是编译用户和区块链之间的加密协议。Hawk 程序包含以下几个部分
+
+* 私有部分 私有部分接收参与方的输入数据，比如“石头剪刀布”游戏中的选择、币值、拍卖中的竞价。私有部分保护参与者的数据和交易信息。
+* 公有部分 公有部分不接触私有的数据和钱。
+Hawk 编译器将把 Hawk 程序编译成以下部分，它们共同定义用户、管理员和 blockchain 之间的加密协议。
+* 将由所有的共识节点执行的区块链程序
+* 一个由用户的执行的程序
+* 一个特殊的利益方也就是管理员执行的程序，它会被即时解释
