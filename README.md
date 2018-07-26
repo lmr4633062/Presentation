@@ -14,3 +14,9 @@ the presentation in Lab
 * Ethereum 相比比特币有更小的块激励和更高的旧块率，Ethereum 需要至少 37 个确认才能达到 bitcoin 6 个区块确认的安全性，这 6 个确认能抵御有 30% 挖矿力的攻击者。而 Litecoin 要求 28 个，Dogecoin 要求 47 个。
 * 不牺牲安全性的话，PoW 区块链最多能达到一分钟 60 个交易 (现在是一分钟 7 个)。
 * 设计了一个比特币区块链模拟器 [Bitcoin blockchain simulator](http://arthurgervais.github.io/Bitcoin-Simulator/index.html) 来评估区块链的安全性和性能。
+## Practical UC-Secure Delegatable Credentials with Attributes and Their Application to Blockchain
+2017 SIGSAC
+* 提出带属性的委托证书的理想功能 ℱdac。委托的任一级属性都是不同的。产生表达 token 时，每个属性都可以选择性披露。Token 可以用于签任意信息。仅在标记期间能保证隐私，在委托期间，被委托人知道委托给她的所有证书链。
+* 从签名方案和零知识证明提出一个普适的 DAC 结构，并且证明在 [Universally Composable Security: A New Paradigm for Cryptographic Protocols](https://ieeexplore.ieee.org/abstract/document/959888/) 提出的 UC (通用可组合性)框架是安全的。本文的结构可用于安全构造区块，构造一个混合协议的高级系统，使得模块设计和简单的安全分析成为可能。
+* 本文基于最近由 [Efficient Fully Structure-Preserving Signatures for Large Messages](https://link.springer.com/chapter/10.1007/978-3-662-48797-6_11) 提出的结构保护签名机制和 [schnorr 零知识证明](https://link.springer.com/chapter/10.1007/0-387-34805-0_22)，描述了一个 DAC 有效实例。
+* 在满足隐私保护条件的环境下的许可区块链中呈现了本文方案的执行，并给出了执行图，证明了方案的可行性。比如用来自于委托证书 4 个未公开的属性产生了一个属性 token，就花了 50 毫秒，验证就花了 40 毫秒。
