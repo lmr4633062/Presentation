@@ -22,6 +22,7 @@ the presentation in Lab
 * 在满足隐私保护条件的环境下的许可区块链中呈现了本文方案的执行，并给出了执行图，证明了方案的可行性。比如用来自于委托证书 4 个未公开的属性产生了一个属性 token，就花了 50 毫秒，验证就花了 40 毫秒。
 ## Hawk: The Blockchain Model of Cryptography and Privacy-Preserving Smart Contracts
 2016 S&P
+
 本文提出 Hawk，一个建立隐私保护智能合约的框架。非专业开发人员也可以写 Hawk 程序而不用执行加密。这个 Hawk 编译器是编译用户和区块链之间的加密协议。Hawk 程序包含以下几个部分
 
 * 私有部分 私有部分接收参与方的输入数据，比如“石头剪刀布”游戏中的选择、币值、拍卖中的竞价。私有部分保护参与者的数据和交易信息。
@@ -32,6 +33,8 @@ Hawk 编译器将把 Hawk 程序编译成以下部分，它们共同定义用户
 * 一个由用户的执行的程序
 * 一个特殊的利益方也就是管理员执行的程序，它会被即时解释
 ## Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains
+2018 Eurosys
+
 Fabric 是由 [Linux Foundation](https://www.linuxfoundation.org/) 主持的 [Hyperledger](http://www.hyperledger.org/) 的项目之一。fabric 被用于超过 400 种原型、概念验证和生产分布式系统，跨不同行业和用例。这些使用案例包括调解纠纷、贸易物流、外汇净额结算、食品安全、合同管理、钻石溯源、奖励积分管理、低流动性证券交易和结算、身份管理以及通过数字货币结算等领域。
 * Fabric 支持以标准编程语言编写的分布式应用程序的执行，其方式可以使它们在多个节点上一致地执行。
 
